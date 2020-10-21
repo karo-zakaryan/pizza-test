@@ -1,0 +1,22 @@
+:global {
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @media (max-width: 1132px) {
+      margin: 0 16px;
+    }
+  }
+
+  .ant-image-preview-mask, .ant-modal-mask {
+    z-index: 1000000 !important;
+  }
+
+  .ant-modal-wrap {
+    z-index: 1000000 !important;
+  }
+
+  .ant-select-dropdown {
+    z-index: 9999999999 !important;
+  }
+}

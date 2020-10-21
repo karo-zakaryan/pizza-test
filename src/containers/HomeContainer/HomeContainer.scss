@@ -1,0 +1,14 @@
+.pizzas_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+
+  @media (max-width: 1002px) {
+    justify-content: center !important;
+  }
+
+  @media (max-width: 710px) {
+    margin-top: 0;
+  }
+}

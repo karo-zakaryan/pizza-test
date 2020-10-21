@@ -1,0 +1,51 @@
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media (max-width: 440px) {
+    width: 90%;
+  }
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    input {
+      width: 100% !important;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  label {
+    font-family: 'Roboto Light';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #5f6c7b;
+    margin-bottom: 4px;
+  }
+
+  button {
+    width: 120px;
+    height: 40px;
+    background: #cccccc;
+    @media (max-width: 440px) {
+      width: 80px;
+    }
+  }
+}
+
+.errors {
+  color: white;
+  font-size: 12px;
+}

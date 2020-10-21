@@ -1,0 +1,33 @@
+.counter {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 625px) {
+    justify-content: center;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  div {
+    width: 30px;
+    height: 30px;
+    background: gray;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  input {
+    width: 30px;
+    margin: 0 5px;
+    border: none;
+    text-align: center;
+  }
+}

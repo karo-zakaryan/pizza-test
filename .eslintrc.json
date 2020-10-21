@@ -1,0 +1,105 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react", "plugin:import/warnings"],
+  "plugins": ["react", "react-hooks", "prettier", "import"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["~", "./"],
+          ["containers", "./src/containers"],
+          ["components", "./src/components"],
+          ["hooks", "./src/hooks"],
+          ["layouts", "./src/layouts"],
+          ["styles", "./src/styles"],
+          ["utils", "./src/utils"],
+          ["constants", "./src/constants"],
+          ["public", "./public"],
+          ["store", "./src/store"],
+          ["libraries", "./src/libraries"]
+        ],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "process": true,
+    "fetch": false
+  },
+  "rules": {
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/react-in-jsx-scope": 0,
+    "class-methods-use-this": 0,
+    "linebreak-style": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/interactive-supports-focus": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "groups": [
+          "external",
+          "internal",
+          "builtin",
+          "index",
+          "sibling",
+          "parent"
+        ]
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__", "_allPostsMeta"]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "no-async-promise-executor": 0,
+    "react/no-unused-prop-types": 0,
+    "import/no-cycle": 0,
+    "consistent-return": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "import/no-extraneous-dependencies": 0,
+    "prettier/prettier": "error",
+    "react/destructuring-assignment": 0,
+    "react/jsx-props-no-spreading": 0,
+    "camelcase": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "pizza__test",
+  "short_name": "pizza",
+  "description": "Pizza test",
+  "theme_color": "#936f2d",
+  "background_color": "#936f2d",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}

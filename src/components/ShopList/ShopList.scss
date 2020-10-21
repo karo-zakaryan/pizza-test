@@ -1,0 +1,36 @@
+.purchase {
+  margin: 0 16px;
+}
+
+.marger {
+  margin: 0 20px 12px 0;
+}
+
+.purchase_mobile {
+  margin-bottom: 8px;
+}
+
+.sub_title {
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 1px solid gray;
+}
+
+.img_wrap {
+  width: 120px;
+  height: 80px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.total_price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+}
